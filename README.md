@@ -1,6 +1,6 @@
 # ChangeTracker
 
-# What is a temporal table?
+# What is temporal table?
 Temporal tables are a functionality of Microsoft SQL Server that allows you to record and manage the history of data. This allows you to track changes and retrieve previous versions of the data. A temporal table is essentially a conventional table that has an integrated system versioning mechanism. This mechanism automatically records changes to the data and saves a history of these changes.
 
 The way temporal tables work is that two additional columns are added to the table: a start time and an end time. The start time indicates when a row was created or updated, while the end time marks the time at which the row was changed or deleted. When data is changed, new versions of the rows are created and saved in the table. At the same time, previous versions of the rows are given an end timestamp.
@@ -12,8 +12,10 @@ Versioning over time is implemented in the system using a pair of tables, one re
 
 The current table holds the current value for each row. The history table holds any previous value (old version) for each row, if any. It also records the start and end of the period in which it was valid.
 
----
-
 # Diagram
 
 ![Tables Diagram](https://github.com/manajafi/ChangeTracker/blob/master/ChangeTracker/Images/1.png)
+
+# Database structure
+
+![Tables Diagram](https://github.com/manajafi/ChangeTracker/blob/master/ChangeTracker/Images/2.png)
