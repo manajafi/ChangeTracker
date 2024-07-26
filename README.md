@@ -16,6 +16,4 @@ The current table holds the current value for each row. The history table holds 
 
 # Diagram
 
-Below is a diagram illustrating how temporal tables and their versioning mechanism work:
-
-![Temporal Table Diagram](./Images/1.png)
+![Tables Diagram](https://github.com/manajafi/ChangeTracker/blob/master/ChangeTracker/Images/1.png)
