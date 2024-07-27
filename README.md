@@ -1,6 +1,6 @@
 # Change Tracker In ASP.NET Core 8
 
-# What Is Temporal Table?
+# What is a temporal table?
 Temporal tables are a functionality of Microsoft SQL Server that allows you to record and manage the history of data. This allows you to track changes and retrieve previous versions of the data. A temporal table is essentially a conventional table that has an integrated system versioning mechanism. This mechanism automatically records changes to the data and saves a history of these changes.
 
 The way temporal tables work is that two additional columns are added to the table: a start time and an end time. The start time indicates when a row was created or updated, while the end time marks the time at which the row was changed or deleted. When data is changed, new versions of the rows are created and saved in the table. At the same time, previous versions of the rows are given an end timestamp.
@@ -14,13 +14,3 @@ The current table holds the current value for each row. The history table holds 
 # Diagram
 
 ![Tables Diagram](https://github.com/manajafi/ChangeTracker/blob/master/ChangeTracker/Images/1.png)
-
-# Database Structure
-
-![Tables Diagram](https://github.com/manajafi/ChangeTracker/blob/master/ChangeTracker/Images/2.png)
-
-# Reference
-
-Link 1: https://medium.com/@gustavoboesepederiva/tracking-and-asnotracking-in-ef-core-003fa30d09cc
-
-Link 2:https://learn.microsoft.com/en-us/ef/core/change-tracking/
