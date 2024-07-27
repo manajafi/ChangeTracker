@@ -9,6 +9,7 @@ By using temporal tables, you can easily track changes to the data over time. Th
 
 # How Does The Version Table Work?
 Versioning over time is implemented in the system using a pair of tables, one representing the current table and the other a history table. Within these tables, two additional datetime2 columns are used to define the validity period for each row:
+
 The current table holds the current value for each row. The history table holds any previous value (old version) for each row, if any. It also records the start and end of the period in which it was valid.
 
 # Diagram
